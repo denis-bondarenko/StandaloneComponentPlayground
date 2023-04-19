@@ -19,6 +19,7 @@ import { ShippingComponent } from './shipping/shipping.component';
     HttpClientModule,
     TopBarComponent,
     ProductAlertsComponent,
+    ProductListComponent,
     RouterModule.forRoot([
       { path: '', component: ProductListComponent },
       { path: 'products/:productId', component: ProductDetailsComponent },
@@ -28,7 +29,6 @@ import { ShippingComponent } from './shipping/shipping.component';
   ],
   declarations: [
     AppComponent,
-    ProductListComponent,
   ],
   bootstrap: [
     AppComponent
