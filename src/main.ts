@@ -1,10 +1,27 @@
-import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
+import { HttpClientModule } from '@angular/common/http';
+import { importProvidersFrom } from '@angular/core';
+import { bootstrapApplication } from '@angular/platform-browser';
+import { provideRouter } from '@angular/router';
 
-import { AppModule } from './app/app.module';
+import { AppComponent } from './app/app.component';
+import { CartComponent } from './app/cart/cart.component';
+import { ProductDetailsComponent } from './app/product-details/product-details.component';
+import { ProductListComponent } from './app/product-list/product-list.component';
+import { ShippingComponent } from './app/shipping/shipping.component';
 
-platformBrowserDynamic().bootstrapModule(AppModule)
-  .catch(err => console.error(err));
-
+bootstrapApplication(AppComponent, {
+  providers: [
+    importProvidersFrom(
+      HttpClientModule
+    ),
+    provideRouter([
+      { path: '', component: ProductListComponent },
+      { path: 'products/:productId', component: ProductDetailsComponent },
+      { path: 'cart', component: CartComponent },
+      { path: 'shipping', component: ShippingComponent },
+    ]),
+  ],
+});
 
 /*
 Copyright Google LLC. All Rights Reserved.
