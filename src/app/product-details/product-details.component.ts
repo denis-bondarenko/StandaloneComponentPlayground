@@ -7,11 +7,10 @@ import {CartService} from '../cart.service';
 import { CommonModule } from '@angular/common';
 
 @Component({
-  standalone: true,
-  imports: [CommonModule, RouterModule,],
-  selector: 'app-product-details',
-  templateUrl: './product-details.component.html',
-  styleUrls: ['./product-details.component.css'],
+    imports: [CommonModule, RouterModule,],
+    selector: 'app-product-details',
+    templateUrl: './product-details.component.html',
+    styleUrls: ['./product-details.component.css']
 })
 export class ProductDetailsComponent implements OnInit {
   constructor(

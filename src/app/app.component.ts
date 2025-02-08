@@ -3,11 +3,10 @@ import { RouterModule } from '@angular/router';
 import { TopBarComponent } from './top-bar/top-bar.component';
 
 @Component({
-  standalone: true,
-  imports: [RouterModule, TopBarComponent],
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+    imports: [RouterModule, TopBarComponent],
+    selector: 'app-root',
+    templateUrl: './app.component.html',
+    styleUrls: ['./app.component.css']
 })
 export class AppComponent {
 }

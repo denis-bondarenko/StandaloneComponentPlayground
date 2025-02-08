@@ -6,11 +6,10 @@ import { ProductAlertsComponent } from '../product-alerts/product-alerts.compone
 import { products } from '../products';
 
 @Component({
-  standalone: true,
-  imports: [CommonModule, RouterModule,ProductAlertsComponent,],
-  selector: 'app-product-list',
-  templateUrl: './product-list.component.html',
-  styleUrls: ['./product-list.component.css']
+    imports: [CommonModule, RouterModule, ProductAlertsComponent,],
+    selector: 'app-product-list',
+    templateUrl: './product-list.component.html',
+    styleUrls: ['./product-list.component.css']
 })
 export class ProductListComponent {
   products = products;

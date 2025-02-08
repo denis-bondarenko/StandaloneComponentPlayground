@@ -4,11 +4,10 @@ import { RouterModule } from '@angular/router';
 import { CartService } from '../cart.service';
 
 @Component({
-  standalone: true,
-  imports: [RouterModule],
-  selector: 'app-top-bar',
-  templateUrl: './top-bar.component.html',
-  styleUrls: ['./top-bar.component.css'],
+    imports: [RouterModule],
+    selector: 'app-top-bar',
+    templateUrl: './top-bar.component.html',
+    styleUrls: ['./top-bar.component.css']
 })
 export class TopBarComponent {
   

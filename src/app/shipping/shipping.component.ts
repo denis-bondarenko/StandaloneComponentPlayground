@@ -7,12 +7,11 @@ import { Observable } from 'rxjs';
 import { CartService } from '../cart.service';
 
 @Component({
-  standalone: true,
-  //imports: [NgFor, AsyncPipe, CurrencyPipe],  // not sure what's the best way to inject whole module or directives only
-  imports: [CommonModule],
-  selector: 'app-shipping',
-  templateUrl: './shipping.component.html',
-  styleUrls: ['./shipping.component.css'],
+    //imports: [NgFor, AsyncPipe, CurrencyPipe],  // not sure what's the best way to inject whole module or directives only
+    imports: [CommonModule],
+    selector: 'app-shipping',
+    templateUrl: './shipping.component.html',
+    styleUrls: ['./shipping.component.css']
 })
 export class ShippingComponent implements OnInit {
   constructor(private _cartService: CartService) {}
